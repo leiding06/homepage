@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Lei's homepage</title>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Hello World! This is Lei</h1>
+    </div>
+
+    <div class="background-container">
+        <div class="topnav">
+            <a href="index.html">HOME</a>
+            <a href="cv.html" class="disabled">CV</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="side-toolbar">
+            <button onclick="scrollToSection('professional')">Professional</button>
+            <button onclick="scrollToSection('education')">Education</button>
+            <button onclick="scrollToSection('research')">Research</button>
+            <button onclick="scrollToSection('certificates')">Certificates</button>
+        </div>
+
+        <div class="cv-box">
+            <div class="cv-content">
+                <h1 id="professional">Professional Experience</h1>
+                <hr>
+                <section>
+                    <p><strong>Senior GIS Officer, Headland Archaeology (RSK Group)</strong></p>
+                    <p>Silsoe Office, UK (02/2024 – Present)</p>
+                    <ul>
+                        <li>Promoted to Senior GIS Officer in February 2024, overseeing and managing the GIS team.</li>
+                        <li>Strategic Workflow Design: Designed and implemented advanced workflows for quality control (QC), including the development of automated QC reports, significantly enhancing data integrity and processing efficiency.</li>
+                        <li>Team Leadership: Oversee the GIS team’s workload, delegate tasks effectively, and provide continuous guidance to achieve project goals and enhance team performance.</li>
+                        <li>Innovation and Development: Led the team in driving innovative projects, developed multiple QGIS plugins for department use or project-manager specific tasks use to automise GIS tasks.</li>
+                        <li>Data Visualization and Reporting: Leveraged advanced Excel functionalities, such as pivot tables, to create detailed dashboards that link excavation process reports to GIS data, providing clients with comprehensive and easily interpretable statistical insights.</li>
+                        <li>Project Oversight: Managed the production of GIS deliverables, ensuring they meet the highest standards of quality and accuracy, and provided technical support and troubleshooting for ongoing projects</li>
+                        <li>Software Integration and Development: Designed custom applications, including a site diary application, to reduce software costs and minimize the need for team members to switch between multiple tools, leading to increased efficiency and budget savings. Continuously developed and integrated tools tailored for internal use to streamline operations and enhance productivity.</li>
+                    </ul>
+                </section>
+                <section>
+                    <p><strong>GIS Officer, Headland Archaeology (RSK Group)</strong></p>
+                    <p><strong>GIS Supervisor, Headland Archaeology (RSK Group)</strong></p>
+                    <p>Silsoe Office, UK (02/2022 – 01/2024)</p>
+                    <ul>
+                        <li>Joined Headland as GIS Supervisor in February 2022 and promoted to GIS Officer in June 2022.</li>
+                        <li>Conducted utility mapping, pre-ex evaluation project design, and post-ex GIS data QC checks.</li>
+                        <li>Implemented model tools and employed PyQGIS and ArcPy coding to enhance workflow and reduce manual tasks, achieving significant time savings and efficiency improvements: reduced section profile work time by 10%, streamlined stakeout point workflow from six steps to a single click, and resolved missing Z value issues caused by geometry tidy work using a Python script.</li>
+                        <li>Played a key role in GIS-related development, writing comprehensive guides and training materials for GIS team setup, field use, and office use.</li>
+                        <li>Developed various applications for different projects based on the Mergin Map platform, including Trench Tracker, Feature Tracker, Base Map, and Conditional Survey with Photo Record.</li>
+                        <li>Proposed, investigated, and led the shift from SHP to GPKG file formats, laying the groundwork for adopting PostgreSQL with PostGIS.</li>
+                        <li>Provided technical support for project maintenance, troubleshooting, problem-solving, and innovation visualization based on feedback from different departments.</li>
+                        <li>Advanced Data Management: Facilitated the Geophysics Team's transition from CAD to GIS, developing standardized templates for data structure, layer format, and layout output, thus optimizing project workflows.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p><strong>IT Instructor (Part Time) – ComputerXplorer</strong></p>
+                    <p>Hampshire, UK (10/2021 – 04/2022)</p>
+                    <ul>
+                        <li>Instructed students in MIT Code Blocks, Scratch, and Minecraft code blocks to create small games and accomplish tasks.</li>
+                        <li>Designed teaching plans, delivery plans, and successfully met teaching goals.</li>
+                        <li>Taught basic Computer Science concepts through code block learning processes</li>
+                    </ul>
+                </section>
+                <section><strong>-------------------Master degree study 08/2020 - 12/2021-----------------</strong></section>
+                <section>
+                    <p><strong>Exhibition Project Manager – XMonster</strong></p>
+                    <p>Shanghai, China (02/2016 – 05/2020)</p>
+                    <ul>
+                        <li>KPI Setting and Monitoring: Established and monitored marketing KPIs to measure the effectiveness of exhibition events and campaigns.</li>
+                        <li>Event Design and Execution: Designed and organized exhibition events and seasonal events, overseeing all aspects from initial concept to final execution.</li>
+                        <li>Audience Analysis and Reporting: Conducted audience analysis to understand visitor demographics and preferences, producing detailed reports to inform future strategies.</li>
+                        <li>Collaboration with IT and Graphic Teams: Worked closely with IT and graphic design teams to integrate online and offline marketing efforts, ensuring cohesive and impactful branding. Coordinated with the mobile app development team to enhance user engagement and provide a seamless experience for event attendees.</li>
+                        <li>Marketing and Promotion: Led marketing and promotional activities for events, utilizing both digital and traditional marketing channels to maximize reach and impact.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p><strong>Online Marketing Manager - Junmeng Network Technology Co.,Ltd.</strong></p>
+                    <p>Shanghai, China (11/2014 – 01/2016)</p>
+                </section>
+
+                <section>
+                    <p><strong>Co-Funder - Rammu Culture Communication Co., Ltd.</strong></p>
+                    <p>Shanghai, China (01/2012 – 11/2014)</p>
+                </section>
+
+                <section>
+                    <p><strong>Assistant Curator - Singshine Marketing Services Co.,Ltd.</strong></p>
+                    <p>Shanghai, China (07/2009 – 01/2012)</p>
+                </section>
+
+                <section>
+                    <h1 id="education">Education</h1>
+                    <hr>
+                    <p><strong>MA Maritime Archaeology - University of Southampton, UK	-- Distinction</strong></p>
+	                <p>Dissertation: Employed GIS Mapping and data analysis to trace the technological evolution of ship rudders in the South China Sea from pre-history to the 18th Century. Additionally, utilized 3D modelling technology to reconstruct discovered archaeological remains to study rudder’s structure and functions.
+                        Core Course: GIS for Archaeology; Nautical Archaeology; Cultural Heritage within Environment Impact Assessment;etc</p>
+                </section>
+
+                <section>
+                    <p><strong>BSc Applied Psychology – East China Normal University, China	-- First Degree</strong></p>
+                    <p>Core Course: Managerial Psychology; Statistic in Psychology Research; Psychology of Education; etc.</p>
+                </section>
+
+                <section>
+                    <h1 id="research">Research & Volunteer</h1>
+                    <hr>
+                    <p><strong>Digital Record Volunteer - Portland Museum, UK</strong></p>
+                    <p>Earl of Abergavenny collection. Finds recording work by Photogrammetry 3D Technology.</p>
+                </section>
+
+                <section>
+                    <p><strong>Research Assistant Volunteer – CITiZAN, MOLA, UK</strong></p>
+                    <p>Low tidal trail on Longstone site, Portsmouth. Historic record research, site visit, report writing and Esri Story Map post.</p>
+                </section>
+
+                <section>
+                    <p><strong>Photogrammetry & 3D model (Canoes) Research Assistant - University of Southampton, UK</strong></p>
+                    <p>Guyana logboat research. In Pitt Rivers Museum & British Museum:  Take photo, processing data, build and refine 3D model, create digital plan, and write report.</p>
+                </section>
+
+                <section>
+                    <h1 id="certificates">Certificates & Scholarship</h1>
+                    <hr>
+                    <p><strong>AWS Cloud Practitioner</strong></p>
+                    <p>03/2024 Amazon AWS</p>
+                </section>
+
+                <section>
+                    <p><strong>ProQual Level 3 Certificate in Utility Mapping and Surveying</strong></p>
+                    <p>03/2023</p>
+                </section>
+
+                <section>
+                    <p><strong>Postgraduate Merit Scholarship</strong></p>
+                    <p>09/2021 University of Southampton</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="bottomnav">
+            <p>However, life extends beyond work.</p>
+            <a href="explore.html">Explore</a>
+        </div>
+
+        <script>
+            function scrollToSection(sectionId) {
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+
+    </div>
+</body>
+</html>
