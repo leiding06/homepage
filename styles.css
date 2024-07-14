@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body, html {
     margin: 0;
     padding: 0;
@@ -490,3 +491,497 @@ body, html {
         font-size: 1rem;
     }
 }
+=======
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header {
+    background-color: #F87217;
+    padding: 0; /* Adjust padding as needed */
+    text-align: center;
+    color: black;
+    font-size: 1.5rem; /* Increased font size for demonstration */
+    font-family: 'Garamond', cursive;
+}
+
+.header h1 {
+    margin-bottom: 0; /* Add this line to remove bottom margin of h1 */
+    font-size: 2rem;
+}
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;/* Enables Flexbox at center */
+    background-color: black;
+    font-size: 30px;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-shadow: 2px 2px #F87217;
+}
+
+    /* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.disabled {
+    color: grey;
+    pointer-events: none; /* Makes the link unclickable */
+    text-shadow: none;
+}
+
+.background-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('Background1.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.self-image-coverletter {
+    /* Flex make the content display from left to right */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    top: 15%;
+    left: 30%;
+    bottom: 15%;
+    padding: 20px;
+}
+
+.self-image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 10%;
+    margin-right: 10px;
+    border: 10px solid #F87217;
+}
+
+.cover-letter {
+    font-family: 'Garamond', cursive;
+    position: absolute;
+    top: 20%;
+    bottom: 60%;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 70%;
+    max-width: 2200px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+}
+
+.cv-box {
+    position: absolute;
+    top: 130px;
+    bottom: 100px;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 2200px;
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.side-toolbar {
+    position: fixed;
+    top: 300px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin:10px 30px 20px 50px;
+}
+
+.side-toolbar button {
+    margin: 30px 50px 20px 50px;
+    height: 120px;
+    padding: 10px 20px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #F87217;
+    color: white;
+    font-family: 'Garamond', cursive;
+    border-radius: 15px;
+}
+
+
+.cv-content {
+    color: black;
+    font-size: 30px;
+    font-family: 'Garamond', cursive;
+}
+
+.cv-content h1 {
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.cv-content section {
+    margin-bottom: 80px; /* Adjust the value as needed */
+}
+
+.bottomnav {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    position: fixed; /* Change to fixed */
+    bottom: 0; /* Set to 0 to stick to the bottom */
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: none;
+}
+
+.bottomnav a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 0 5px;
+    text-shadow: 2px 2px #F87217;
+}
+
+.bottomnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.bottomnav a.disabled {
+    color: grey;
+    pointer-events: none; /* Makes the link unclickable */
+    text-shadow: none;
+}
+
+/* Contact.html*/
+
+.contact-box {
+    position: absolute;
+    top: 20%;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 50%px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 2%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container {
+    color: black;
+    font-size: 4rem;
+    font-family: 'Garamond', cursive;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2% 2%;
+}
+
+
+/* Skills*/
+
+.skill-box {
+    position: absolute;
+    top: 200px;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1800px;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 10px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#skills {
+    font-family: 'Garamond', cursive;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#skills td, #skills th {
+    padding: 8px;
+    border: 0%;
+  }
+
+#skills tr:nth-child(even){background-color: #f2f2f2;}
+
+#skills tr:hover {background-color: #ddd;}
+
+#skills th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+#skills td {
+    font-size: 25px;
+}
+
+.tb1 {
+    font-size: 30px;
+}
+
+
+/* Explore */
+.explore-box {
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this to your existing CSS */
+
+.gallery {
+    border: 1px solid #ccc;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Garamond';
+    top: 50px;
+    margin: 25px, 25px, 25px, 25px;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 100%; /* Two images in one row on large screens */
+}
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Adjustments for Top Navigation (Topnav) */
+    .header h1 {
+        margin-bottom: 0; /* Add this line to remove bottom margin of h1 */
+        font-size: 1rem;
+    }
+
+    .topnav {
+        padding: 0px 0px;
+        text-decoration: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .topnav a {
+        width: 50%; /* Each link takes half of the width */
+        margin: 2px 0; /* Adjust margin between links */
+        font-size: 8px; /* Decrease font size further for smaller screens */
+    }
+
+    .self-image-coverletter {
+        display: block;
+        align-items: center; /* Center items horizontally */
+        top: 10%; /* Adjust top position as needed */
+        left: 15%; /* Center horizontally */
+    }
+
+    .self-image {
+        border-radius: 50%;
+        align-items: center;
+        margin-top: 5%;
+        width: 80px; /* Adjust image width for mobile */
+        height: 80px; /* Adjust image height for mobile */
+        object-fit: cover;
+        border: 5px solid #F87217;
+        margin-right: none;
+    }
+
+    .cover-letter {
+        background-color: rgba(200, 200, 200, 0.85);
+        top: 30%;
+        bottom: 20%;
+        border-radius: 15px;
+        color: black;
+        max-width: 100%; /* Occupy full width on mobile */
+        font-size: 0.7rem; /* Decrease font size for mobile */
+
+        margin-bottom: 15%;
+    }
+    .cover-letter h2 {
+        font-size:0.7rem;
+    }
+    /* Adjustments for CV Box */
+    .cv-box {
+        top: 15%; /* Adjust position from top */
+        bottom: 10%; /* Adjust position from bottom */
+        font-size: 0.7rem; /* Decrease font size for smaller screens */
+        margin: 2px 2px 2px 2px
+        padding: 1rem;
+    }
+
+    .side-toolbar {
+        position: fixed;
+        top: 10%;
+        left: 5%;
+        right: 0;
+        flex-direction: row;
+        margin:0px 0px 0px 0px;
+        font-size: 1rem;
+    }
+
+    .side-toolbar button {
+        margin: 0px 0px 0px 0px;
+        height: 0%;
+        padding: 0px 0px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        cursor: pointer;
+        background: #F87217;
+        color: white;
+        font-family: 'Garamond', cursive;
+        border-radius: 5px;
+    }
+    .cv-content {
+        color: black;
+        font-size: 1rem;
+        top: 10%;
+        font-family: 'Garamond', cursive;
+    }
+
+    .cv-content h1 {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+
+
+    /* Adjustments for Bottom Navigation (Bottomnav) */
+    .bottomnav {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: fixed; /* Change to fixed */
+        bottom: 0; /* Set to 0 to stick to the bottom */
+        left: 0;
+        right: 0;
+        font-size: 0.7rem;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 1px #000000;
+        background-color: none;
+    }
+
+    .bottomnav a {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 0px 0px;
+        margin: 0 0px;
+        text-shadow: 2px 2px #F87217;
+        font-size: 0.7rem;
+    }
+
+
+    .skill-box {
+        position: absolute;
+        top: 10%;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 1800px;
+        height: 80%;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        padding: 20px;
+        overflow-y: auto; /* Enable vertical scrolling */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    /* Adjustments for Skills Table */
+    #skills {
+        top:10%;
+        bottom: 15%;
+        font-size: 0.2rem; /* Decrease font size for smaller screens */
+    }
+
+    #skills th, #skills td {
+        padding: 0.1rem; /* Adjust table cell padding */
+        font-size: 0.5rem; /* Adjust table header font size */
+    }
+    #skills h2 {
+        font-size: 0.5rem
+    }
+    .contact-container {;
+        font-size: 1rem;
+    }
+}
+>>>>>>> e9dca65ff03d91998365d62e40093ce92c2b8455
